@@ -49,10 +49,10 @@
             <td>coseno</td>
             <td>seno</td>
         </tr>
-        <?php for($x=0;$x < 2; $x++): ?>
+        <?php for($x=0;$x < 2; $x+=0.01): ?>
         <tr>
-            <td><?php muestra(cos($x))?></td>
-            <td><?php muestra(sin($x))?></td>
+            <?php muestra(cos($x))?>
+            <?php muestra(sin($x))?>
         </tr>
         <?php endfor; ?>
     </table>
