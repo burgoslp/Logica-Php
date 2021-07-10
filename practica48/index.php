@@ -9,16 +9,17 @@
 <body>
     <pre>
         Confeccionar un programa que permita hacer multiples upload con una pagina (por ejemplo, que
-        permita seleccionar hasta 3 archivos) 
+        permita seleccionar hasta 3 archivos) y los almacene en una carpta llamada doc para esto 
+        la carpeta tiene que estar creada
     </pre>
 
-    <form action="result.php" >
+    <form action="result.php" method="post" enctype="multipart/form-data">
         Foto1
-        <input type="file" name="file" ><br><br>
+        <input type="file" name="archivo[]" ><br><br>
         foto2
-        <input type="file" name="file" ><br><br>
+        <input type="file" name="archivo[]" ><br><br>
         foto3
-        <input type="file" name="file" ><br><br>
+        <input type="file" name="archivo[]" ><br><br>
         <input type="submit" value="Guardar fotos">
     </form>
 </body>
